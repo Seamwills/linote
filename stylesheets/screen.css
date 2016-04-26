@@ -1,0 +1,725 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 52, ../sass/screen.scss */
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+/* line 56, ../sass/screen.scss */
+#sideslip {
+  position: absolute;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  z-index: 2;
+}
+/* line 63, ../sass/screen.scss */
+#sideslip .head {
+  position: relative;
+  height: 163px;
+  background: #5892F2;
+}
+/* line 68, ../sass/screen.scss */
+#sideslip .head span.icon {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+/* line 78, ../sass/screen.scss */
+#sideslip .head span.icon a {
+  display: block;
+  width: 32px;
+  text-indent: -10000px;
+}
+/* line 83, ../sass/screen.scss */
+#sideslip .head ul {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 28px;
+}
+/* line 89, ../sass/screen.scss */
+#sideslip .head li {
+  float: left;
+  line-height: 28px;
+  margin-left: 20px;
+}
+/* line 94, ../sass/screen.scss */
+#sideslip .head li span.menu {
+  display: block;
+  margin: auto;
+  width: 80px;
+  color: #ffffff;
+  background: #4674DE;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 104, ../sass/screen.scss */
+#sideslip .head li span.menu:visited {
+  color: #ffffff;
+}
+/* line 105, ../sass/screen.scss */
+#sideslip .head li span.menu:hover {
+  background: #3151BC;
+}
+/* line 106, ../sass/screen.scss */
+#sideslip .head li span.menu.selected {
+  background: #3151BC;
+}
+/* line 110, ../sass/screen.scss */
+#sideslip .body {
+  position: absolute;
+  top: 163px;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+}
+/* line 117, ../sass/screen.scss */
+#sideslip .body .settings, #sideslip .body .export, #sideslip .body .trash {
+  display: none;
+}
+/* line 123, ../sass/screen.scss */
+#sideslip .body .trash #trashlist {
+  position: absolute;
+  top: 0;
+  bottom: 24px;
+  overflow-y: auto;
+  width: 100%;
+}
+/* line 129, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li {
+  border-bottom: 1px solid #f0f0f0;
+  height: 80px;
+  cursor: pointer;
+}
+/* line 27, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li:hover {
+  background-color: #FAFAFA;
+}
+/* line 28, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li.selected {
+  background-color: #EEF3F8;
+}
+/* line 30, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note {
+  padding: 18px 40px;
+}
+/* line 32, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note p.title, #sideslip .body .trash #trashlist li div.note p.text {
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 35, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note p.title span.highlight, #sideslip .body .trash #trashlist li div.note p.text span.highlight {
+  background: #ffff00;
+}
+/* line 39, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note p.title {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+/* line 43, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note p.text {
+  font-size: 0.9em;
+  color: #888;
+}
+/* line 47, ../sass/screen.scss */
+#sideslip .body .trash #trashlist li div.note p.time {
+  display: none;
+}
+/* line 133, ../sass/screen.scss */
+#sideslip .body .trash div#shortcut {
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+  background: #4674DE;
+  width: 100%;
+}
+/* line 140, ../sass/screen.scss */
+#sideslip .body .trash div#shortcut li {
+  float: left;
+  width: 50%;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 147, ../sass/screen.scss */
+#sideslip .body .trash div#shortcut li:hover {
+  background: #3151BC;
+}
+
+/* line 153, ../sass/screen.scss */
+#menubar {
+  /* within menubar */
+}
+/* line 154, ../sass/screen.scss */
+#menubar ul {
+  list-style-type: none;
+}
+/* line 155, ../sass/screen.scss */
+#menubar .top {
+  position: relative;
+  height: 48px;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 161, ../sass/screen.scss */
+#menubar .top .left > ul li, #menubar .top .right > ul li {
+  margin-top: 8px;
+}
+/* line 164, ../sass/screen.scss */
+#menubar .bottom {
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 170, ../sass/screen.scss */
+#menubar .bottom .left input.searchbox {
+  display: block;
+  padding: 2px 0 0 24px;
+  margin-top: 3px;
+  width: 214px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background: url(../images/search.png) no-repeat 2px 2px;
+  outline: 0;
+}
+/* line 184, ../sass/screen.scss */
+#menubar .bottom .right li {
+  margin-right: 4px;
+}
+/* line 186, ../sass/screen.scss */
+#menubar .bottom .right #tag-line span.tag {
+  color: #46ADD4;
+  font-size: 0.85em;
+  padding: 4px;
+  border-radius: 5px;
+}
+/* line 192, ../sass/screen.scss */
+#menubar .bottom .right #tag-line span.tag.selected {
+  background: #EEF3F8;
+}
+/* line 195, ../sass/screen.scss */
+#menubar .bottom .right #tag-line input {
+  border: none;
+  outline: none;
+}
+/* line 203, ../sass/screen.scss */
+#menubar .left, #menubar .right {
+  height: 100%;
+}
+/* line 205, ../sass/screen.scss */
+#menubar .left > ul li, #menubar .right > ul li {
+  float: left;
+  margin: 4px 16px 4px 0;
+  line-height: 32px;
+  list-style-type: none;
+}
+/* line 212, ../sass/screen.scss */
+#menubar .left {
+  position: relative;
+  width: 320px;
+  border-right: 1px solid #f0f0f0;
+}
+/* line 216, ../sass/screen.scss */
+#menubar .left > ul {
+  margin-left: 16px;
+}
+/* line 219, ../sass/screen.scss */
+#menubar .right {
+  position: absolute;
+  left: 321px;
+  top: 0;
+  right: 0;
+}
+/* line 224, ../sass/screen.scss */
+#menubar .right ul {
+  margin-left: 24px;
+}
+/* line 227, ../sass/screen.scss */
+#menubar .last {
+  position: absolute;
+  right: 16px;
+}
+/* line 231, ../sass/screen.scss */
+#menubar span.icon {
+  display: block;
+}
+/* line 233, ../sass/screen.scss */
+#menubar span.icon:hover {
+  background-color: #EEF3F8;
+  border-radius: 4px;
+}
+/* line 238, ../sass/screen.scss */
+#menubar span.icon a {
+  display: block;
+  width: 32px;
+  text-indent: -10000px;
+}
+
+/* line 244, ../sass/screen.scss */
+#notelist {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  bottom: 0;
+  width: 320px;
+  border-right: 1px solid #f0f0f0;
+  overflow-y: auto;
+}
+/* line 253, ../sass/screen.scss */
+#notelist li {
+  border-bottom: 1px solid #f0f0f0;
+  height: 80px;
+  cursor: pointer;
+}
+/* line 27, ../sass/screen.scss */
+#notelist li:hover {
+  background-color: #FAFAFA;
+}
+/* line 28, ../sass/screen.scss */
+#notelist li.selected {
+  background-color: #EEF3F8;
+}
+/* line 30, ../sass/screen.scss */
+#notelist li div.note {
+  padding: 18px 40px;
+}
+/* line 32, ../sass/screen.scss */
+#notelist li div.note p.title, #notelist li div.note p.text {
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 35, ../sass/screen.scss */
+#notelist li div.note p.title span.highlight, #notelist li div.note p.text span.highlight {
+  background: #ffff00;
+}
+/* line 39, ../sass/screen.scss */
+#notelist li div.note p.title {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+/* line 43, ../sass/screen.scss */
+#notelist li div.note p.text {
+  font-size: 0.9em;
+  color: #888;
+}
+/* line 47, ../sass/screen.scss */
+#notelist li div.note p.time {
+  display: none;
+}
+
+/* line 257, ../sass/screen.scss */
+#notebody {
+  position: absolute;
+  /* add 1px for border on top and left */
+  left: 321px;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  overflow-y: hidden;
+}
+/* line 266, ../sass/screen.scss */
+#notebody textarea {
+  height: 100%;
+  width: 100%;
+  padding: 20px 140px 0 60px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  resize: none;
+}
+
+/* line 280, ../sass/screen.scss */
+a#icon-add {
+  background: url(../images/add.png) no-repeat;
+}
+
+/* line 283, ../sass/screen.scss */
+a#icon-menu {
+  background: url(../images/menu.png) no-repeat;
+}
+
+/* line 286, ../sass/screen.scss */
+a#icon-delete {
+  background: url(../images/delete.png) no-repeat;
+}
+
+/* line 289, ../sass/screen.scss */
+a#icon-info {
+  background: url(../images/info.png) no-repeat;
+}
+
+/* line 292, ../sass/screen.scss */
+a#icon-user {
+  color: #46ADD4;
+  text-decoration: none;
+}
+/* line 21, ../sass/screen.scss */
+a#icon-user:hover {
+  color: #80C0E2;
+}
+
+/* line 295, ../sass/screen.scss */
+a#icon-back {
+  background: url(../images/arrow-left.png) no-repeat;
+}
+
+/* line 298, ../sass/screen.scss */
+a#icon-tag {
+  position: absolute;
+  right: 18px;
+  color: #46ADD4;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+/* line 21, ../sass/screen.scss */
+a#icon-tag:hover {
+  color: #80C0E2;
+}
+/* line 303, ../sass/screen.scss */
+a#icon-tag.notice {
+  color: #4674DE;
+}
+
+/* Hidden elements style */
+/* line 307, ../sass/screen.scss */
+div.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+/* line 313, ../sass/screen.scss */
+div.options {
+  position: absolute;
+  z-index: 3;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px #aaa;
+}
+/* line 321, ../sass/screen.scss */
+div.options li {
+  padding: 8px 16px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 325, ../sass/screen.scss */
+div.options li:hover {
+  background: #5892F2;
+  color: #ffffff;
+}
+/* line 330, ../sass/screen.scss */
+div.options li:nth-child(1) {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 334, ../sass/screen.scss */
+div.options li + li {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 340, ../sass/screen.scss */
+div.logout {
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: -8px;
+  border: 1px solid;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #46ADD4;
+  line-height: 32px;
+  cursor: pointer;
+}
+/* line 351, ../sass/screen.scss */
+div.logout:hover {
+  background: #FAFAFA;
+}
+/* line 353, ../sass/screen.scss */
+div.logout a {
+  display: block;
+  padding: 0 8px;
+}
+
+/* line 358, ../sass/screen.scss */
+div.info {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 2;
+  width: 300px;
+  height: 120px;
+  padding: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  background: #5892F2;
+  color: #ffffff;
+}
+/* line 369, ../sass/screen.scss */
+div.info table {
+  width: 100%;
+}
+/* line 370, ../sass/screen.scss */
+div.info tr {
+  line-height: 40px;
+}
+/* line 374, ../sass/screen.scss */
+div.info td:nth-child(1) {
+  width: 40%;
+}
+/* line 377, ../sass/screen.scss */
+div.info td:nth-child(2) {
+  width: 60%;
+  text-align: center;
+}
+
+/* line 383, ../sass/screen.scss */
+div.taglist {
+  position: absolute;
+  display: none;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  width: 160px;
+  max-height: 240px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px #aaa;
+}
+/* line 396, ../sass/screen.scss */
+div.taglist li {
+  display: relative;
+  float: left;
+  width: 100%;
+  padding: 6px 0;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: #46ADD4;
+}
+/* line 404, ../sass/screen.scss */
+div.taglist li:hover {
+  background: #FAFAFA;
+}
+/* line 405, ../sass/screen.scss */
+div.taglist li.head {
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 406, ../sass/screen.scss */
+div.taglist li.selected {
+  background: #EEF3F8;
+}
+/* line 408, ../sass/screen.scss */
+div.taglist li span.tagname {
+  padding-left: 16px;
+}
+/* line 411, ../sass/screen.scss */
+div.taglist li span.tagnum {
+  position: absolute;
+  right: 0;
+  padding-right: 18px;
+}
+
+/* Login and register form */
+/* line 419, ../sass/screen.scss */
+.login, .register {
+  position: relative;
+  width: 400px;
+  margin: 200px auto;
+  border: 1px solid #D5DFE5;
+}
+/* line 425, ../sass/screen.scss */
+.login a, .register a {
+  color: #46ADD4;
+  text-decoration: none;
+}
+/* line 21, ../sass/screen.scss */
+.login a:hover, .register a:hover {
+  color: #80C0E2;
+}
+/* line 426, ../sass/screen.scss */
+.login h3, .register h3 {
+  padding: 8px 0;
+  text-align: center;
+  background: #268BD2;
+  color: #fff;
+  font-size: 1em;
+}
+/* line 433, ../sass/screen.scss */
+.login label, .register label {
+  width: 100px;
+  text-align: center;
+}
+/* line 437, ../sass/screen.scss */
+.login input.text, .register input.text {
+  width: 220px;
+  padding: 0 10px;
+  font-size: 0.85em;
+  border: 1px solid #ccc;
+}
+/* line 443, ../sass/screen.scss */
+.login input.submit, .register input.submit {
+  width: 244px;
+  height: 32px;
+  margin-left: 100px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+/* line 451, ../sass/screen.scss */
+.login input.submit:hover, .register input.submit:hover {
+  background: #ebebeb;
+}
+/* line 453, ../sass/screen.scss */
+.login input.text, .login label, .register input.text, .register label {
+  display: block;
+  float: left;
+  margin: 6px 0;
+  height: 24px;
+  line-height: 24px;
+}
+/* line 460, ../sass/screen.scss */
+.login fieldset, .register fieldset {
+  margin: 20px 0;
+  border: none;
+}
+
+/* line 465, ../sass/screen.scss */
+.login {
+  height: 260px;
+}
+
+/* line 468, ../sass/screen.scss */
+.register {
+  height: 357px;
+}
+
+/* Utils */
+/* line 473, ../sass/screen.scss */
+.utils {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin: 12px 0;
+}
+/* line 479, ../sass/screen.scss */
+.utils li {
+  list-style-type: none;
+  float: left;
+  padding-left: 10px;
+}
+
+/* line 486, ../sass/screen.scss */
+.warning {
+  position: absolute;
+  z-index: 2;
+  margin-left: 40px;
+  padding: 0 20px;
+  line-height: 24px;
+  border: 1px solid;
+  color: #f00;
+  background-color: #FEDE00;
+}
+
+/* line 496, ../sass/screen.scss */
+.warning.error {
+  top: 40%;
+  left: 100%;
+  width: 150px;
+}
